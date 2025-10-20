@@ -1,10 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*Uso direto*/
 :root {
   --main-bg-color: brown;
-  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 a{
     text-decoration: none; /* remove o sublinhado dos links */
     color: black; /* altera a cor de todos os links das páginas */
 }
-
+body{
+font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 0.5rem+2vw, 3rem);
+}
+h1, h2, h3, h4, h5, h6{
+   font-family: "Roboto", sans-serif;
+}
+/*Header*/
+header nav ul {
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+  margin: 3vw auto 3vw auto;
+  border: solid 2px #E5E5E5;
+  border-radius: 10vw;
+}
+header nav ul li a{
+ padding: 5px 10px;
+ display: block;
+ border-radius: 100000vw;
+}
+header nav ul li a.atual{
+ background-color: black;
+ color: white;
+}
+/* Banner */
+section.banner{
+  padding: 5vw;
+}
+section.banner h1{
+  font-size: 1.5rem;
+  margin: 0 0 2vw 0;
+}
+section.banner h1 span{
+  font-weight: bold;
+}
+section.banner p{
+  color: #757575;
+}
